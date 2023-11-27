@@ -1,0 +1,124 @@
+%%% Document class (e.g. article, letter, beamer, etc...)
+\documentclass{article}
+%%%
+
+%%% Packages
+\usepackage[round]{natbib} %Allows custom options for bibliography management
+\usepackage{cite} %Adds bibliograhy functionality like \citet
+\usepackage{geometry} %Allows me to set the margins
+\usepackage{amsmath} %Adds additional math-related commands
+\usepackage{amsfonts} %Adds fonts-within-math-mode functionality
+\usepackage{amsthm} %Enables custom theorem environments
+\usepackage{bm} %Adds bold math fonts
+\usepackage{setspace} %Enables \doublespacing command
+\usepackage{parskip} %Removes indentation
+\usepackage{tikz} %Used for formatting plots and figures
+\usepackage{float} %Used to force the position of tables and figures
+\usepackage{graphicx} %For including images
+\usepackage[T1]{fontenc} %Allows for encoding of slavic letters
+\usepackage{lmodern} %Need to load back the original font for when T1 encoding is active
+%%%
+
+%%% Set the margins of the document
+\geometry{
+ left=1in,
+ right=1in,
+ bottom=1in,
+ top=1in,
+ }
+%%%
+ 
+%%% User-defined commands
+
+\DeclareMathOperator*{\argmax}{argmax} % The argmax operator
+
+\newtheorem{assumption}{Assumption} % Treating assumptions like theorems.
+\newtheorem{proposition}{Proposition} % Treating propositions like theorems.
+
+%%%
+
+%%% Title
+
+%%%
+
+\begin{document}
+%\doublespacing
+\interfootnotelinepenalty=10000
+
+\section*{Notes for November 27 Meeting}
+
+\begin{itemize}
+\item \textbf{Find the canonical text(s) for demographic transitions in economics}
+\begin{itemize}
+\item \textit{Population Economics}:
+\begin{itemize}
+\item Understanding Demographic Transitions - Diebolt and Perrin (2017) [Largely a collection of stylized facts, tracking the changes in the demography of France over time. A useful reference to provide historical perspective but no theory.]
+\item Population - John R. Weeks (2015) [Forms the basis of an undergraduate population economics course not necessarily aimed at economists.]
+\item Population Economics - Razin and Sadka (1995) [An advanced undergrad or graduate course on population economics.]
+\item Population Dynamics - Chu (1998) [Quite theoretical, is primarily aimed at researchers in population economics or a PhD field course.]\
+\end{itemize}
+\item \textit{Mathematical Demography}:
+\begin{itemize}
+\item Modelling Population Dynamics - Newman et al. (2014) [Not necessarily looking at demography, contains a review of state space models for changes in animal populations.]
+\item Mathematical Demography - Smith and Keyfitz (2013) [Largely a collection of classical papers (from 1800s-1960s) of reduced-form analysis of demographic transitions - not particularly useful but interesting from a historical perspective.]
+\end{itemize}
+\end{itemize}
+
+Not entirely sure where to start here. It could be useful to read Razin and Sadka (1995) first and then move on to Chu (1998). They are both relatively short, so it wouldn't take too much time.
+
+I have also looked through a few syllabi for both undergraduate and graduate courses in population economics to find references. The Weeks text was used in an undergraduate course (Colorado State) and then the graduate courses (Berkeley and McMaster) were just a reading list of papers -- some of which I have included below.
+
+\item \textbf{Papers on demographic transition:}
+\begin{itemize}
+\item \textit{Historical Context/First Demographic Transition}:
+\begin{itemize}
+\item Coale, A. J. (1989). Demographic transition. In \textit{Social Economics} (pp. 16-23). London: Palgrave Macmillan UK.
+\item Kirk, D. (1996). Demographic transition theory. \textit{Population Studies}, 50(3), 361-387.
+\item Galor, O., \& Weil, D. N. (1999). From Malthusian stagnation to modern growth. \textit{American Economic Review}, 89(2), 150-154.
+\item Lee, R. (2002). The demographic transition: three centuries of fundamental change. \textit{Journal of Economic Perspectives}, 17(4), 167-190.
+\item Greenwood, J., \& Seshadri, A. (2002). The US demographic transition. \textit{American Economic Review}, 92(2), 153-159.
+\item Lam, D. (2011). How the world survived the population bomb: Lessons from 50 years of extraordinary demographic history. \textit{Demography}, 48(4), 1231-1262.
+\item Herzer, D., Strulik, H., \& Vollmer, S. (2012). The long-run determinants of fertility: one century of demographic change 1900–1999. \textit{Journal of Economic Growth}, 17, 357-385.
+\item Diebolt, C., \& Perrin, F. (2013). From stagnation to sustained growth: the role of female empowerment. \textit{American Economic Review}, 103(3), 545-549.
+\item Lee, R. (2015). Becker and the demographic transition. \textit{Journal of Demographic Economics}, 81(1), 67-74.
+\item Madsen, J. B., Robertson, P. E., \& Ye, L. (2019). Malthus was right: Explaining a millennium of stagnation. \textit{European Economic Review}, 118, 51-68.
+\end{itemize}
+
+\item \textit{Second demographic transition}:\footnote{In 2015 the political economist Nicholas Eberstadt said in a NYT article: ``Long stable marriages are out, and divorce or separation are in, along with serial cohabitation and increasingly contingent liaisons.''}
+
+\begin{itemize}
+\item Lesthaeghe, R. (1995). The second demographic transition in Western countries: An interpretation. \textit{Gender and Family Change in Industrialized Countries}, 17-62.
+\item Lesthaeghe, R. (2010). The unfolding story of the second demographic transition. \textit{Population and Development Review}, 36(2), 211-251.
+\item Bailey, M. J., Guldi, M. E., \& Hershbein, B. J. (2013). Is there a case for a" Second Demographic Transition"? Three distinctive features of the post-1960 US fertility decline (No. w19599).  \textit{National Bureau of Economic Research}.
+\item Zaidi, B., \& Morgan, S. P. (2017). The second demographic transition theory: A review and appraisal. \textit{Annual Review of Sociology}, 43, 473-492.
+\item Manning, W. D., Smock, P. J., \& Fettro, M. N. (2019). Cohabitation and marital expectations among single millennials in the US. \textit{Population Research and Policy Review}, 38(3), 327-346.
+\item Sassler, S., \& Lichter, D. T. (2020). Cohabitation and marriage: Complexity and diversity in union‐formation patterns. \textit{Journal of Marriage and Family}, 82(1), 35-61.
+\item Kearney, M. S., Levine, P. B., \& Pardue, L. (2022). The puzzle of falling US birth rates since the Great Recession. \textit{Journal of Economic Perspectives}, 36(1), 151-176.
+\end{itemize}
+
+
+\end{itemize}
+
+\item \textbf{Stylized Facts about Divorce}
+
+\item \textbf{Consider the simplest model of divorce where we only observe hazard rates, and everyone is of the same type and married.}
+\begin{itemize}
+\item
+\end{itemize}
+
+\item \textbf{See what other data sets are available (not just Canada)}
+\begin{itemize}
+\item
+\end{itemize}
+\item \textbf{What happens when a divorce occurs in these data - do they drop out?}
+\begin{itemize}
+\item
+\end{itemize}
+\end{itemize}
+
+\newpage
+
+
+
+
+\end{document}
