@@ -45,92 +45,62 @@
 %\doublespacing
 %\interfootnotelinepenalty=10000
 
-\section*{Notes for November 27 Meeting}
+\section*{Notes for Dec 18 Meeting}
+\subsection*{What I have done:}
 
 \begin{itemize}
-\item \textbf{Find the canonical text(s) for demographic transitions in economics}
+\item \textbf{Papers about divorce/separation/cohabitation}
 \begin{itemize}
+\item Read some of the literature on divorce/separation and also how it relates to cohabitation. [Some of the more interesting ones: \citet{weiss1997match}, \citet{brien2006cohabitation}, \citet{matouschek2008economics}, \citet{kulu2010premarital}, \citet{lundberg2016family}, \citet{folke2020all}] 
 
+\item Nothing really to note on comparing costs of separation in marriage vs. cohabitation. [\citet{tach2015trends} do a bit of analysis showing decreases in household income are roughly the same in cases of divorce and dissolving a cohabitating partnership.]
 
+\item There is some interesting stuff about measuring cohabitation in survey data. [\citet{manning2005measuring}, \citet{fitch2005rise}, \citet{kennedy2012measuring}, \citet{manning2019measuring}]
 
-\item \textit{Population Economics - Razin and Sadka (1995)}: An advanced undergrad or graduate course on population economics.
-\item \textit{Population Dynamics - Chu (1998)}: A curated volume of papers in population economics focusing on macro impact of micro decisions - aimed at researchers.
-
-\item The Chu book should be quite useful, but Razin and Sadka is quite short so I will read it as well.
-
-\item Also found a few syllabi for graduate courses in population economics. No textbooks but some papers I added to my reading list.
+\item I also looked at \citet{mourifie2021cobb} to see what kind of cohabitation information they are using. They used US census data from 1990, 2000, and 2010. 
 
 \end{itemize}
 
-\item \textbf{Look for demographic research in economics}
+\item \textbf{Data sources}
 \begin{itemize}
-\item A handful of papers in the top journals: AER, Journal of Economic Growth, Journal of Politcal Economy. Also a collection of field journals: Journal of Population Economics, Demography, Journal of Demographic Economics. Journal of Economic Perspectives also has a few interesting survey papers.
-\item Sociologists tend to produce the most demographic research - these papers provide useful context. 
-\item Demographic research in economics largely appears to be trying to structure the descriptive analyses found in the sociology research.
-\item Demographers tend to see there being two distinct transitions: from pre-industrial to developed, and then developed to what we are observing today in marriage and fertility trends.
-\item This ``second'' demographic transition is the motivation for what I am interested in doing.
-\item In 2015 the political economist Nicholas Eberstadt said in a NYT article: ``Long stable marriages are out, and divorce or separation are in, along with serial cohabitation and increasingly contingent liaisons.''
-\item We observe significantly more cohabitation relative to the past, and thus, while divorce rates are dropping, separation rates among all types of coresidential pairings are likely making up this difference, but it is hard to measure. 
-\item I'm putting together a short lit review on demographic transition, still haven't gotten to divorce.
+\item I have narrowed in on a few promising candidates - all US data.
+\begin{itemize}
+\item Current Population Survey (CPS): A monthly US survey which tracks households for 4 months at a time at two separate times. Has reliable cohabitation information starting in 2007. I have the data and am playing around with it.
+\item National Longitudinal Survey of Youth - 1997 Cohort (NLSY97): Follows a sample of Americans born in the years 1980-84 (about 9000 of them). Very detailed, but somewhat restrictive given that it is just one cohort.
+\item National Survey of Family Growth: A repeated cross section, initially only tracked women but men were added in 2015. Cohabitation is identified through a question "have you ever/are you currently living with...".
+\end{itemize}
 \end{itemize}
 
 
-\item \textbf{Stylized facts about divorce}
+\item \textbf{I met with Aloysius}
 \begin{itemize}
-\item Canada: Divorce rate steadily declining since 1991, linked to aging population and increased cohabitation (6\% in 1981 to 21\% in 2016). Nearly all of the decline is attributed to people aged 15-34, who now mostly cohabitate. There is also covid-related ``noise'' around the pandemic years
-\item Need to look at other countries too, will focus on countries in similar stage of transition.
-\end{itemize}
-
-\item \textbf{Consider the simplest model of divorce where we only observe hazard rates}
-\begin{itemize}
-\item Here we could model divorce in a similar way to how one models default in credit risk. That is, instead of the `value of the firm' model, we would have the `value of the marriage' model.
+\item He gave me some useful information (unsurprisingly) and some papers to read.
+\item Measuring cohabitation rates historically is a paper by itself.
+\item For endogenizing separation in the \citet{choo2006marries} and \citet{choo2015dynamic} framework, he advised taking the simplest approach, some logit form which ultimately produces a simple/tractable MMF.
 \end{itemize}
 
 
 
-\item \textbf{What happens when a divorce occurs in these data - do they drop out?}
-\begin{itemize}
-\item Still not sure, I need to see a sample of one of these data sets, which I don't have yet.
-\item Based on my reading I'm now also curious about how we could identify separation in a cohabitation setting.
 \end{itemize}
 
-\item \textbf{See what other data sets are available (not just Canada)}
+\subsection*{What is still left to do:}
 \begin{itemize}
-\item Still to do.
+\item \textbf{Consider the simplest model of divorce/separation where we only observe hazard rates}
+\begin{itemize}
+\item Dependent on how well I am able to identify cohab dissolution from CPS - as this is the most representative sample, I'd prefer to use it.
+\item I need to try this with all 3 sources listed above and see if they are all similar.
+\item Not a lot of examples in the literature of people trying to do this.
 \end{itemize}
+\item \textbf{Write an intro chapter for my thesis}
+\begin{itemize}
+\item I would like to do a proper lit review and synthesize all of the information I've read through.
+\item Fully document all of the trends in marriage, divorce/separation, fertility, and cohabitation. It hasn't been done in a while and there are likely some interesting things to note regarding the period post-2008 and COVID. Include some reduced-form analyses.
 
+\end{itemize}
 \end{itemize}
 
 \newpage
-
-
-\textbf{Some of the papers I read:}
-\begin{itemize}
-\item \textit{Historical Context/First Demographic Transition}:
-\begin{itemize}
-\item Coale, A. J. (1989). Demographic transition. In \textit{Social Economics} (pp. 16-23). London: Palgrave Macmillan UK.
-\item Kirk, D. (1996). Demographic transition theory. \textit{Population Studies}, 50(3), 361-387.
-\item Galor, O., \& Weil, D. N. (1999). From Malthusian stagnation to modern growth. \textit{American Economic Review}, 89(2), 150-154.
-\item Lee, R. (2002). The demographic transition: three centuries of fundamental change. \textit{Journal of Economic Perspectives}, 17(4), 167-190.
-\item Greenwood, J., \& Seshadri, A. (2002). The US demographic transition. \textit{American Economic Review}, 92(2), 153-159.
-\item Lam, D. (2011). How the world survived the population bomb: Lessons from 50 years of extraordinary demographic history. \textit{Demography}, 48(4), 1231-1262.
-\item Herzer, D., Strulik, H., \& Vollmer, S. (2012). The long-run determinants of fertility: one century of demographic change 1900–1999. \textit{Journal of Economic Growth}, 17, 357-385.
-\item Diebolt, C., \& Perrin, F. (2013). From stagnation to sustained growth: the role of female empowerment. \textit{American Economic Review}, 103(3), 545-549.
-\item Lee, R. (2015). Becker and the demographic transition. \textit{Journal of Demographic Economics}, 81(1), 67-74.
-\item Madsen, J. B., Robertson, P. E., \& Ye, L. (2019). Malthus was right: Explaining a millennium of stagnation. \textit{European Economic Review}, 118, 51-68.
-\end{itemize}
-
-\item \textit{Second demographic transition}
-
-\begin{itemize}
-\item Lesthaeghe, R. (1995). The second demographic transition in Western countries: An interpretation. \textit{Gender and Family Change in Industrialized Countries}, 17-62.
-\item Lesthaeghe, R. (2010). The unfolding story of the second demographic transition. \textit{Population and Development Review}, 36(2), 211-251.
-\item Bailey, M. J., Guldi, M. E., \& Hershbein, B. J. (2013). Is there a case for a" Second Demographic Transition"? Three distinctive features of the post-1960 US fertility decline (No. w19599).  \textit{National Bureau of Economic Research}.
-\item Zaidi, B., \& Morgan, S. P. (2017). The second demographic transition theory: A review and appraisal. \textit{Annual Review of Sociology}, 43, 473-492.
-\item Manning, W. D., Smock, P. J., \& Fettro, M. N. (2019). Cohabitation and marital expectations among single millennials in the US. \textit{Population Research and Policy Review}, 38(3), 327-346.
-\item Sassler, S., \& Lichter, D. T. (2020). Cohabitation and marriage: Complexity and diversity in union‐formation patterns. \textit{Journal of Marriage and Family}, 82(1), 35-61.
-\item Kearney, M. S., Levine, P. B., \& Pardue, L. (2022). The puzzle of falling US birth rates since the Great Recession. \textit{Journal of Economic Perspectives}, 36(1), 151-176.
-\end{itemize}
-\end{itemize}
+\bibliographystyle{plainnat}
+\bibliography{/home/selliott/Research/bib/matching}
 
 \end{document}
