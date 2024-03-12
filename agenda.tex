@@ -45,57 +45,58 @@
 %\doublespacing
 %\interfootnotelinepenalty=10000
 
-\section*{Notes for Jan 8 Meeting}
-\subsection*{What I have done:}
+\section*{Notes for March 13 Meeting}
+\subsection*{Updates:}
 
 \begin{itemize}
-\item \textbf{My plan for the intro chapter}
+\item \textbf{The intro chapter}
 \begin{itemize}
-\item Discuss the data in detail: what can we measure, what can't we measure, which countries have reliable/useful data, etc.
-\item Cover the second demographic transition and discuss changes in: marriage rate vs. cohabitation rate, divorce and separation, fertility, matching patterns (e.g., is there more or less positive assortative matching?) -- display stylized facts on these topics.
-\item Literature review on matching and separation.
-\item Relate the matching and demographic literature with some illustration of how one of the extant matching models can be used to say something about demographic transition.
+\item I have been working on this and I'm thinking it could be a full chapter, not just an intro chapter.
+\item I'd like to revisit measuring cohabitation prior to the CPS including it as an option on the questionnaire in 2007 -- I think there could likely be either some ML or econometric techniques which could be applied.
+\item At present, the technique is to use the ``person's of opposite sex living together'' as a proxy for cohab -- is it possible to do better than this? 
+\item I could try some predictive model and use the more recent data for cross-validation purposes.
+\item Use Ismael and Aloysius' model on this richer data set to explore the differing trends in marriage/cohabitation over the last several decades through the context of gains to each type of relationship within different subgroups of the population.
+\item Explore PAM in this context also -- does it exist for cohabitation to the same extent it does for marriage?
 
 \end{itemize}
 
-\item \textbf{Some reading on TU matching/separation}
+\item \textbf{The model for divorce}
 \begin{itemize}
-\item Aloysius asked me to read and provide a referee report for a paper Bernard Salani\'{e} sent him. It is the chapter on TU matching for the upcoming Handbook of Matching - more or less a summary of \citet{galichon2022cupid} and \citet{galichon2022estimating} using the Logit assumption from \citet{choo2006marries} for illustration purposes.
-\item \citet{adda2020there} endogenize separation in a TU context using a match-specific shock - an interesting starting point but needs to be fleshed out.
-\item An interesting identification technique in \citet{gualdani2023partial} which may be useful.
+\item I found a similar example of what I am trying to do in one of Chiappori's old working papers -- a much simpler and static case, but it has some useful information in it I can use.
+\item The utility function I use implies TU and we disregard bargaining weights in marriage. Weights in divorce could be fixed by legislation or at the time they match (i.e. prenuptial agreements).
+\item The key thing to distinguish between is whether the public good stays public outside of marriage (e.g. children) or if it becomes private (e.g. housing). This influences the shape of the pareto frontier outside of marriage.
+\item What I'm struggling with: Suppose I have a social planner's solution, is this guaranteed to also be an equilibrium in a decentralized environment? 
 \end{itemize}
 
 
-\item \textbf{Started writing down a model for separation}
+\item \textbf{Some other things}
 \begin{itemize}
-\item The TU framework was fresh in my mind from reading Bernard's paper so I started there.
-\item I assume everyone is matched and we can identify/observe the average surplus of a match of some given type which is split between the individuals matched.
-\item A match dissolves if match-specific shocks cause the surplus falls below a threshold and there is an associated cost of separation.
-\item We would like to identify this cost and threshold. 
-\item I will bring a print out with some details.
+\item Bob reached out to me a little while ago about potentially teaching ECO372 this summer (the May-June session). The role is now officially posted so I was going to apply.
+\item I applied for the 2024 Price Theory Summer Camp at the University of Chicago - Becker Friedman Institute and was accepted (occurs in the last week of June).
 \end{itemize}
 
 
 
 \end{itemize}
 
-\subsection*{What is still left to do:}
+\subsection*{Next steps:}
 \begin{itemize}
-\item \textbf{Work on the intro chapter}
+\item \textbf{The ``intro'' chapter}
 \begin{itemize}
-\item Gather some more data.
-\item Put together the demographic transition and matching sections. Most of this is already written -- just need to organize/edit it.
-\item Need to think of an interesting application to illustrate the use of matching models in demography.
+\item Lots of collecting/cleaning/organizing the data.
+\item Start looking into predictive latent variable models. Do household characteristics (aside from just opposite-sex individuals living together) indicate cohabitation?
 \end{itemize}
-\item \textbf{The model for separation}
+\item \textbf{The model for divorce}
 \begin{itemize}
-\item Keep working on this and add some more details.
-\item Incorporate any feedback you have.
+\item I need to think a bit more about the application. 
+\item What I am thinking: if I am able to identify entry and exit costs, can I explain some of the recent declines in marriage and increases in cohabitation rates through changes to these costs?
+\item Start writing the paper.
+
 \end{itemize}
 \end{itemize}
 
 \newpage
 \bibliographystyle{plainnat}
-\bibliography{/home/selliott/Research/bib/matching}
+%\bibliography{/home/selliott/Research/bib/matching}
 
 \end{document}
