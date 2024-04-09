@@ -45,34 +45,29 @@
 %\doublespacing
 %\interfootnotelinepenalty=10000
 
-\section*{Notes for March 13 Meeting}
+\section*{Notes for April 10 Meeting}
 \subsection*{Updates:}
 
 \begin{itemize}
-\item \textbf{The intro chapter}
+\item \textbf{Data (see plots)}
 \begin{itemize}
-\item I have been working on this and I'm thinking it could be a full chapter, not just an intro chapter.
-\item I'd like to revisit measuring cohabitation prior to the CPS including it as an option on the questionnaire in 2007 -- I think there could likely be either some ML or econometric techniques which could be applied.
-\item At present, the technique is to use the ``person's of opposite sex living together'' as a proxy for cohab -- is it possible to do better than this? 
-\item I could try some predictive model and use the more recent data for cross-validation purposes.
-\item Use Ismael and Aloysius' model on this richer data set to explore the differing trends in marriage/cohabitation over the last several decades through the context of gains to each type of relationship within different subgroups of the population.
-\item Explore PAM in this context also -- does it exist for cohabitation to the same extent it does for marriage?
+\item Did a bit of work to see if we can identify divorce/separation from survey data -- the answer is, sort of.
+\item Plotted some marital surplus time series just to see what they looked like -- sort of interesting.
+\item Tried a simple machine learning technique to recover historical cohabitation rates -- actually works quite well for a first pass. 
 
 \end{itemize}
 
-\item \textbf{The model for divorce}
+\item \textbf{The model}
 \begin{itemize}
-\item I found a similar example of what I am trying to do in one of Chiappori's old working papers -- a much simpler and static case, but it has some useful information in it I can use.
-\item The utility function I use implies TU and we disregard bargaining weights in marriage. Weights in divorce could be fixed by legislation or at the time they match (i.e. prenuptial agreements).
-\item The key thing to distinguish between is whether the public good stays public outside of marriage (e.g. children) or if it becomes private (e.g. housing). This influences the shape of the pareto frontier outside of marriage.
-\item What I'm struggling with: Suppose I have a social planner's solution, is this guaranteed to also be an equilibrium in a decentralized environment? 
+\item I have been thinking about the form of the model.
+\item Agents enter adulthood single and are finitely lived. They decide to stay single, cohabitate, or marry. If cohabitating, they can remain cohabitating, decide to marry, or separate. If married they can either remain married, or separate.
+\item Start with Choo and add cohabitation, keep separation exogenous. I could likely get closed-form MMF in this case. I am working this out to see how it fits the matching/separation data.
 \end{itemize}
 
 
-\item \textbf{Some other things}
+\item \textbf{Other things}
 \begin{itemize}
-\item Bob reached out to me a little while ago about potentially teaching ECO372 this summer (the May-June session). The role is now officially posted so I was going to apply.
-\item I applied for the 2024 Price Theory Summer Camp at the University of Chicago - Becker Friedman Institute and was accepted (occurs in the last week of June).
+\item Applying for OGS.
 \end{itemize}
 
 
@@ -81,17 +76,14 @@
 
 \subsection*{Next steps:}
 \begin{itemize}
-\item \textbf{The ``intro'' chapter}
+\item \textbf{Data}
 \begin{itemize}
-\item Lots of collecting/cleaning/organizing the data.
-\item Start looking into predictive latent variable models. Do household characteristics (aside from just opposite-sex individuals living together) indicate cohabitation?
+\item Try to fit the dynamic (Choo) version of the model to the CPS data.
 \end{itemize}
-\item \textbf{The model for divorce}
+\item \textbf{The model}
 \begin{itemize}
-\item I need to think a bit more about the application. 
-\item What I am thinking: if I am able to identify entry and exit costs, can I explain some of the recent declines in marriage and increases in cohabitation rates through changes to these costs?
-\item Start writing the paper.
-
+\item Endogenize separation (I mostly already know how to do this). It won't have a ``nice'' closed form but it will give us something estimable.
+\item Add entry/exit costs. Can this help rationalize the observed matching patterns?
 \end{itemize}
 \end{itemize}
 
