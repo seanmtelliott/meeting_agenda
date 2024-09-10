@@ -45,45 +45,42 @@
 %\doublespacing
 %\interfootnotelinepenalty=10000
 
-\section*{Notes for August 7 Meeting}
+\section*{Notes for September 11 Meeting}
 \subsection*{General updates:}
 
 \begin{itemize}
 \item \textbf{Committee}
 \begin{itemize}
-\item Met with Jiaying 
-\item I will set a meeting up for the four of us (myself, you, Aloysius, and Jiaying) in September when everyone is back in town.
+\item Added Aloysius and I'm meeting with Jiaying on Friday afternoon and will ask if she will also join
+\item Set up a meeting after that
+\end{itemize}
+\item \textbf{Presentation}
+\begin{itemize}
+	\item I will be presenting in the labour/public finance/related fields (LAPUFIR) seminar on Wednesday Nov 13 at 1 PM.
 \end{itemize}
 \end{itemize}
 \subsection*{Project updates:}
 \begin{itemize}
 \item \textbf{Predicting historical cohabitation}
 \begin{itemize}
-\item I have been learning about neural networks.
-\item There are computationally efficient algorithms (stochastic gradient descent) which should allow me to use an exceptionally large training set.
-\item Once I fit the model, I am going to go back and construct estimates of who was cohabitating using past census data.
-\item The prevailing opinion is that cohabitation either didn't increase, or actually declined, from 1880-1970. If my model produces something different, it could be a interesting contribution to the demographic literature.
+\item I'm currently training a neural net on cohabitation data from 2007 to 2024 and I have census data all the way back to 1900 to use for out of sample prediction.
+\item There is a ton of data to process so this is a bit of a challenge computationally.
+\item I'm working on a stochastic gradient descent algorithm but it isn't cooperating with me at the moment.
 \end{itemize}
 
 
 \item \textbf{Decline of marriage}
 \begin{itemize}
-\item I am trying to assess possible explanations for the decline in marriage amongst young people so as to tell an interesting story.
-\item In general, there has been a decline in ``community'' since about 1970. Coincidentally, this is also when marriage rates start to trend downward.
-\item Related to that, I have a couple potential ideas I am looking into:
-\begin{itemize}
-	\item Video games/leisure -- there is a recent JPE paper about how young men work less because they'd rather play video games. Is this similar for forming relationships?
-	\item Increased political polarization. I read something recently about how young men are becoming more conservative while this isn't true for young women. Is this creating friction in matching markets?
-\end{itemize}
-\item I am currently going through some data to see if I can estimate any reduced-form/first-stage relationships and then I'll try to find some exogenous variation to do something causal.
+\item Exploring the question of how political polarization affects search frictions in the marriage/dating market for young people.
+\item I think this can be done without observing individual-level voting behaviour. 
+\item This relies on having county-level variation in political polarization amongst young people. That is, I need to observe some areas which are politically homogenous and some which are heterogeneous.
+\item The first stage is then to show that there is correlation between matching/meeting rates and the direction young men/women vote. 
+\item Currently looking for the data for this.
 \end{itemize}
 
 \item \textbf{Endogenous separation}
 \begin{itemize}
-	\item I have been reading some IO papers to see how they handle this type of problem.
-	\item Models of firm entry/firm exit are not too dissimilar from what I am considering.
-	\item If exiting is a terminal state, this problem is solved. I can derive a closed-form separation function and identify exit costs if I assume that marriage quality shocks are common to both partners and I have multiple periods of divorce/separation data.
-	\item What is novel in my case is the possibility of remarriage. I am thinking about how to deal with this.
+	\item I have some model preliminaries to share. (See other print out)
 \end{itemize}
 
 
